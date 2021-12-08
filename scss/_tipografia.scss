@@ -1,0 +1,77 @@
+/******************
+ESTILOS DE TIPOGRAFIAS
+*******************************/
+.textoCarousel{
+    color: #f2e9d8;
+    font-family: 'Yeseva One', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(71, 71, 71);
+    font-family: 'Yeseva One', cursive;
+    font-weight: bold;
+    font-size: 35px;
+    margin: 20px;
+} 
+
+h2 {
+    color: rgb(71, 71, 71);
+    font-family: 'Yeseva One', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 20px;
+}
+
+h3 {
+    color: rgb(71, 71, 71);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px 20px;
+}
+
+h4 {
+    color: #474747;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+h5 {
+    color: #474747;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: regular;
+}
+
+p {
+    color: rgb(71, 71, 71);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 10px 20px;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.navbar-light {
+    color: #474747;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+ul{
+    color: #474747;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: regular;
+    font-size: 20px;
+
+    li{
+        margin: 5px;
+    }
+}

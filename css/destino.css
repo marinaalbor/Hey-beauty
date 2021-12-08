@@ -1,0 +1,491 @@
+/******************
+ESTILOS DE TIPOGRAFIAS
+*******************************/
+.textoCarousel {
+  color: #f2e9d8;
+  font-family: 'Yeseva One', cursive;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center; }
+
+h1 {
+  color: #474747;
+  font-family: 'Yeseva One', cursive;
+  font-weight: bold;
+  font-size: 35px;
+  margin: 20px; }
+
+h2 {
+  color: #474747;
+  font-family: 'Yeseva One', cursive;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 20px; }
+
+h3 {
+  color: #474747;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px 20px; }
+
+h4 {
+  color: #474747;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold; }
+
+h5 {
+  color: #474747;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: regular; }
+
+p {
+  color: #474747;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 1.5;
+  padding: 10px 20px; }
+
+.negrita {
+  font-weight: bold; }
+
+.navbar-light {
+  color: #474747;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 20px; }
+
+ul {
+  color: #474747;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: regular;
+  font-size: 20px; }
+  ul li {
+    margin: 5px; }
+
+/* RESPONSIVE */
+/* MEDIA QUERIES */
+/* Smartphone */
+@media (max-width: 599px) {
+  header {
+    display: flex;
+    flex-direction: column; }
+  body {
+    margin-bottom: 250px; }
+  .gridCuatroCol {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+  .gridDosCol {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+  .iframeContainer {
+    display: flex;
+    flex-direction: column; }
+  footer {
+    display: flex;
+    flex-direction: column; }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); } }
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+  header {
+    display: flex;
+    flex-direction: column; }
+  body {
+    margin-bottom: 250px; }
+  .gridCuatroCol {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .gridDosCol {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+  .iframeContainer {
+    display: flex;
+    flex-direction: column; }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+  footer {
+    display: flex;
+    flex-direction: column; } }
+
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: row; }
+  body {
+    margin-bottom: 150px; }
+  .gridCuatroCol {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+  .gridDosCol {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  footer {
+    display: flex;
+    flex-direction: row; } }
+
+.rosa {
+  color: #f2bbe3; }
+
+.verde {
+  color: #2a5955; }
+
+.amarillo {
+  color: #f2b33d; }
+
+.beige {
+  color: #f2e9d8; }
+
+.gris {
+  color: #474747; }
+
+.fondorosa {
+  background-color: #f2bbe3; }
+
+.fondoverde {
+  background-color: #2a5955; }
+
+.fondoamarillo {
+  background-color: #f2b33d; }
+
+.fondobeige {
+  background-color: #f2e9d8; }
+
+.fondogris {
+  background-color: #474747; }
+
+.menu {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 999; }
+
+.menu__logo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left; }
+
+.menu__seccion {
+  display: flex;
+  flex-flow: row nowrap;
+  text-decoration: none;
+  margin: 10px;
+  color: #474747;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  height: 30px;
+  text-align: center;
+  list-style-type: none; }
+
+.menu__seccion--activo {
+  display: flex;
+  flex-flow: row nowrap;
+  text-decoration: none;
+  margin: 10px;
+  padding: 0px 10px;
+  color: #F2E9D8;
+  background-color: #2A5955;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  list-style-type: none; }
+
+.menu__iconos {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center; }
+
+.menu__icono {
+  padding: 5px; }
+
+.producto {
+  margin: 10px;
+  border: 3px solid;
+  border-radius: 15px;
+  border-color: #474747;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+
+.producto__titulo {
+  color: #474747;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px; }
+
+.producto__imagen {
+  justify-self: center;
+  border-radius: 15px; }
+
+.producto__precio {
+  color: #474747;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 1.5;
+  padding: 20px; }
+
+.producto__boton {
+  padding: 5px 20px;
+  background-color: #F2B33D;
+  color: #474747;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: 1px solid;
+  border-color: #474747;
+  border-radius: 15px;
+  margin: 10px; }
+
+.footer {
+  width: 100%;
+  background-color: #2A5955;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0px; }
+
+.footer__texto {
+  color: #F2E9D8;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+  font-size: 16px; }
+
+.footer__titulo {
+  color: #F2E9D8;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0px; }
+
+.footer__logo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left; }
+
+.footer__iconos {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center; }
+
+.footer__icono {
+  padding: 5px; }
+
+.footer__boton {
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #F2B33D;
+  color: #474747;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 15px;
+  border: 1px solid;
+  border-color: #474747;
+  margin: 10px 0px; }
+
+.footer__form {
+  color: #F2E9D8;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1; }
+
+.texto {
+  color: #474747; }
+
+.texto__titulo {
+  font-family: 'Yeseva One', cursive;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 20px; }
+
+.texto__cuerpo {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 1.5;
+  padding: 20px; }
+
+.container {
+  width: 1200px;
+  margin: 20px;
+  justify-items: flex-start; }
+
+.container__producto {
+  width: 600px;
+  margin: 20px;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 15px;
+  border-color: #474747;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+
+/* EXTEND */
+.boton, .botonEnviar, .botonLimpiar {
+  padding: 5px 20px;
+  color: #474747;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: 1px solid;
+  border-color: #474747;
+  border-radius: 15px;
+  margin: 10px; }
+
+.botonEnviar {
+  background-color: #F2B33D; }
+
+.botonLimpiar {
+  background-color: #F2BBE3; }
+
+header {
+  width: 100%;
+  padding: 20px;
+  background-color: #f2bbe3;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+body {
+  min-height: 100vh;
+  background-color: #f2e9d8;
+  width: 100%; }
+
+main {
+  width: 100%;
+  min-height: 100vh; }
+
+nav {
+  height: 50px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  nav ul {
+    display: flex;
+    flex-direction: row; }
+    nav ul ul {
+      display: none; }
+    nav ul li:hover ul {
+      background-color: #f2b33d;
+      color: #474747;
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: normal;
+      list-style-type: none;
+      display: block;
+      position: absolute;
+      text-align: left;
+      padding: 20px;
+      width: 220px;
+      height: 200px; }
+
+table {
+  border: 1px solid;
+  margin: 20px; }
+
+th {
+  background-color: #f2bbe3;
+  border: 1px solid;
+  padding: 10px;
+  font-size: 20px; }
+
+tr, td {
+  border: 1px solid;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+  padding: 10 px;
+  font-size: 20px; }
+
+.form {
+  color: #474747;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  margin: 20px;
+  line-height: 1; }
+
+.fotoGrande {
+  width: 100%;
+  background-position: center center; }
+
+.menuFlex {
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+  .menuFlex a {
+    text-decoration: none;
+    margin: 10px;
+    color: #474747;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    height: 30px;
+    text-align: center;
+    list-style-type: none; }
+  .menuFlex li {
+    list-style-type: none; }
+
+.gridCuatroCol {
+  display: grid; }
+
+.gridDosCol {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
+.iframeContainer {
+  display: flex; }
+
+.iframe {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  align-items: center; }
+
+/* DEGRADADO */
+.degradadoHeader {
+  background-color: #eec0c6;
+  background-image: linear-gradient(to bottom, #F2E9D8, #F2BBE3 95%); }
+
+/* TRANCISIONES */
+.transicionBoton {
+  transition: all 2s; }
+  .transicionBoton:hover {
+    width: 130px;
+    border: #474747 solid 2px;
+    height: 40px; }
+
+nav ul li::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  display: block;
+  background-color: #474747;
+  transition: 2s; }
+
+nav ul li:hover::after {
+  width: 100%; }

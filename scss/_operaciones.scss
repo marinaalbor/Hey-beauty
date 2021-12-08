@@ -1,0 +1,41 @@
+$ancho:1200px;
+
+.container{
+width: $ancho;
+margin: 20px;
+justify-items:flex-start;
+}
+
+.container__producto{
+width: $ancho / 2;
+margin: 20px;
+padding: 5px;
+border: 2px solid;
+border-radius: 15px;
+border-color: $gris;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+}
+
+/* EXTEND */
+.boton{
+    padding: 5px 20px;
+    color: $gris;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid;
+    border-color: $gris;
+    border-radius: 15px;
+    margin: 10px;}
+
+.botonEnviar{
+    @extend .boton;
+    background-color: $amarillo;
+}
+.botonLimpiar{
+    @extend .boton;
+    background-color: $rosa;
+}

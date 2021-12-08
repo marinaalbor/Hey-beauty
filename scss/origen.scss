@@ -1,0 +1,171 @@
+// IMPORTACION
+@import "tipografia";
+@import "responsive";
+@import "paleta";
+@import "estructura";
+@import "bem";
+@import "operaciones";
+
+// VARIABLES
+$rosa:#F2BBE3;
+$verde:#2A5955;
+$amarillo:#F2B33D;
+$beige:#F2E9D8;
+$gris:#474747;
+
+header {
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(242, 187, 227);
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgb(242, 233, 216);
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+nav {
+  height: 50px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ul {
+    display: flex;
+    flex-direction: row; 
+    ul {
+      display: none;
+    }
+
+    li:hover ul {
+      background-color: rgb(242, 179, 61);
+      color: rgb(71, 71, 71);
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: normal;
+      list-style-type: none;
+      display: block;
+      position: absolute;
+      text-align: left;
+      padding: 20px;
+      width: 220px;
+      height: 200px;
+    }
+  }
+} 
+
+table {
+  border: 1px solid;
+  margin: 20px;
+}
+
+th {
+  background-color: rgb(242, 187, 227);
+  border: 1px solid;
+  padding: 10px;
+  font-size: 20px;
+}
+
+tr, td {
+  border: 1px solid;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+  padding: 10 px;
+  font-size: 20px;
+}
+
+.form {
+  color: rgb(71, 71, 71);
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  margin: 20px;
+  line-height: 1;
+}
+
+.fotoGrande {
+  width: 100%;
+  background-position: center center;
+}
+
+.menuFlex {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(71, 71, 71);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    height: 30px;
+    text-align: center;
+    list-style-type: none;
+  }
+
+    li {
+  list-style-type: none;
+}
+}
+.gridCuatroCol {
+  display: grid;
+}
+
+.gridDosCol {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.iframeContainer{
+  display: flex;
+}
+
+.iframe {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* DEGRADADO */
+.degradadoHeader{
+  background-color: #eec0c6;
+background-image: linear-gradient(to bottom,#F2E9D8, #F2BBE3 95%);
+}
+/* TRANCISIONES */
+.transicionBoton {
+  transition: all 2s;
+
+  &:hover {
+    width: 130px;
+    border: rgb(71, 71, 71) solid 2px;
+    height: 40px;
+  }
+}
+
+nav ul li {
+  &::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    display: block;
+    background-color: rgb(71, 71, 71);
+    transition: 2s;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
