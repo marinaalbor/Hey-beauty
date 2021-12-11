@@ -24,7 +24,6 @@ header {
 }
 
 body {
-  min-height: 100vh;
   background-color: rgb(242, 233, 216);
   width: 100%;
 }
@@ -92,6 +91,14 @@ tr, td {
   font-size: 20px;
   margin: 20px;
   line-height: 1;
+    input,select,textarea{
+      margin: 0.5rem;
+      border: 1px solid $gris;
+      border-radius: 5px;
+      }
+      label{
+        margin: 0.5rem;
+      }
 }
 
 .fotoGrande {
@@ -149,9 +156,11 @@ background-image: linear-gradient(to bottom,#F2E9D8, #F2BBE3 95%);
   transition: all 2s;
 
   &:hover {
-    width: 130px;
-    border: rgb(71, 71, 71) solid 2px;
-    height: 40px;
+    //width: 130px;
+    border: $amarillo solid 1px;
+    color: $amarillo;
+    background-color: $gris;
+    //height: 40px;
   }
 }
 

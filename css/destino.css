@@ -72,8 +72,6 @@ ul {
   header {
     display: flex;
     flex-direction: column; }
-  body {
-    margin-bottom: 250px; }
   .gridCuatroCol {
     display: grid;
     grid-template-columns: repeat(1, 1fr); }
@@ -95,8 +93,6 @@ ul {
   header {
     display: flex;
     flex-direction: column; }
-  body {
-    margin-bottom: 250px; }
   .gridCuatroCol {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
@@ -117,8 +113,6 @@ ul {
   header {
     display: flex;
     flex-direction: row; }
-  body {
-    margin-bottom: 150px; }
   .gridCuatroCol {
     display: grid;
     grid-template-columns: repeat(4, 1fr); }
@@ -259,8 +253,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
-  bottom: 0px; }
+  bottom: 0rem; }
 
 .footer__texto {
   color: #F2E9D8;
@@ -372,7 +365,6 @@ header {
   justify-content: space-between; }
 
 body {
-  min-height: 100vh;
   background-color: #f2e9d8;
   width: 100%; }
 
@@ -429,6 +421,12 @@ tr, td {
   font-size: 20px;
   margin: 20px;
   line-height: 1; }
+  .form input, .form select, .form textarea {
+    margin: 0.5rem;
+    border: 1px solid #474747;
+    border-radius: 5px; }
+  .form label {
+    margin: 0.5rem; }
 
 .fotoGrande {
   width: 100%;
@@ -475,9 +473,9 @@ tr, td {
 .transicionBoton {
   transition: all 2s; }
   .transicionBoton:hover {
-    width: 130px;
-    border: #474747 solid 2px;
-    height: 40px; }
+    border: #F2B33D solid 1px;
+    color: #F2B33D;
+    background-color: #474747; }
 
 nav ul li::after {
   content: "";
