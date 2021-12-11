@@ -489,3 +489,25 @@ nav ul li::after {
 
 nav ul li:hover::after {
   width: 100%; }
+
+.notFound {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+  .notFound img {
+    flex-direction: row; }
+  .notFound h1 {
+    font-size: 3rem; }
+  .notFound input {
+    padding: 5px 20px;
+    background-color: #F2B33D;
+    color: #474747;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    border: 2px solid;
+    border-color: #474747;
+    border-radius: 15px;
+    margin: 10px; }

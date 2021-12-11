@@ -169,3 +169,33 @@ nav ul li {
     width: 100%;
   }
 }
+
+.notFound {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  img {
+    flex-direction: row;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  input {
+    padding: 5px 20px;
+    background-color: $amarillo;
+    color: $gris;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    border: 2px solid;
+    border-color: $gris;
+    border-radius: 15px;
+    margin: 10px;
+  }
+}
+
