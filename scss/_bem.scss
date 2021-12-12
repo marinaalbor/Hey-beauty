@@ -1,53 +1,4 @@
 //BLOQUE BEM
-.menu{
-    width: 100%;
-    padding: 10px 20px;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    z-index: 999;
-}
-.menu__logo{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: left;    
-}
-.menu__seccion{
-    display: flex;
-    flex-flow:row nowrap;
-    text-decoration: none;
-    margin: 10px;
-    color: $gris;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-    height: 30px;
-    text-align: center;
-    list-style-type: none; 
-}
-.menu__seccion--activo{
-    display: flex;
-    flex-flow:row nowrap;
-    text-decoration: none;
-    margin: 10px;
-    padding: 0px 10px; 
-    color: $beige;
-    background-color: $verde;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    list-style-type: none;
-}
-.menu__iconos{
-    display: flex;
-    flex-flow:row nowrap;
-    justify-content: flex-end;
-    align-items: center;
-} 
-.menu__icono{
-    padding: 5px;
-}
-//BLOQUE BEM
 .producto {
     margin: 10px;
     border: 3px solid;
@@ -62,8 +13,8 @@
     color: $gris;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
-    font-size: 20px;
-    padding: 20px;
+    font-size: 1.5rem;
+    padding: 1.5rem;
 }
 .producto__imagen{
     justify-self: center;
@@ -73,10 +24,10 @@
     color: $gris;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 1.5rem;
     text-align: justify;
     line-height: 1.5;
-    padding: 20px;
+    padding: 1.5rem;
 }
 .producto__boton{
     padding: 5px 20px;
@@ -84,7 +35,7 @@
     color: $gris;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.5rem;
     border: 1px solid;
     border-color: $gris;
     border-radius: 15px;
@@ -95,7 +46,7 @@
 .footer{
     width: 100%;
     background-color: $verde;
-    padding: 10px 20px;
+    padding: 10px 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -111,7 +62,7 @@
     color: $beige;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.5rem;
     padding: 0px;
 }
 .footer__logo{
@@ -136,7 +87,7 @@
     color: $gris;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
     border-radius: 15px;
     border: 1px solid;
     border-color: $gris;
@@ -146,7 +97,7 @@
     color: $beige;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 1.5rem;
     line-height: 1;
 }
 //BLOQUE BEM
@@ -157,13 +108,13 @@
     font-family: 'Yeseva One', cursive;
     font-weight: bold;
     font-size: 25px;
-    margin: 20px;
+    margin: 1.5rem;
 }
 .texto__cuerpo{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 1.5rem;
     text-align: justify;
     line-height: 1.5;
-    padding: 20px;
+    padding: 1.5rem;
 }
