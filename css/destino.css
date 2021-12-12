@@ -72,7 +72,7 @@ ul {
 /* Smartphone */
 @media (max-width: 599px) {
   html {
-    font-size: 10px; }
+    font-size: 10em; }
   header {
     display: flex;
     flex-direction: column; }
@@ -95,7 +95,7 @@ ul {
 /* Tablet */
 @media (min-width: 600px) and (max-width: 1023px) {
   html {
-    font-size: 12px; }
+    font-size: 12em; }
   header {
     display: flex;
     flex-direction: column; }
@@ -435,9 +435,9 @@ tr, td {
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
 
-.iframeContainer {
-  display: flex; }
-
+/* .iframeContainer{
+  display: flex;
+} */
 .iframe {
   display: flex;
   margin: 1.25rem;

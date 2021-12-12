@@ -3,7 +3,7 @@
 /* Smartphone */
 @media (max-width: 599px){
   html{
-    font-size: 10px;
+    font-size: 10em;
   }
   header{
       display: flex;
@@ -33,7 +33,7 @@
 /* Tablet */
 @media (min-width: 600px) and (max-width: 1023px){
   html{
-    font-size: 12px;
+    font-size: 12em;
   }
   header{
       display: flex;
