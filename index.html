@@ -120,20 +120,26 @@
     <br>
         <img class="fotoGrande" src="./media/skincare2.jpg" alt="Limpieza facial">
         <h2>Promociones</h2>
-        <div class="gridDosCol">
-        <article class="producto"> 
+        <!-- <div class="container__producto"> -->
+        <div class="row m-0">
+          <div class="col">
+         <article class="producto"> 
         <h3 class="producto__titulo">Combo gel exfoliante y protector solar</h3>
         <img class="producto__imagen" src="./media/exfoliante-y-protector.jpg" alt="Combo exfoliante y protector solar">
         <p class="producto__precio">$2599</p>
-        <input class="producto__boton transicionBoton" type="submit" value="Comprar"></article>
+        <input class="producto__boton transicionBoton" type="submit" value="Comprar">
+        </div>
+        <div class="col">
         <article class="producto">
         <h3 class="producto__titulo">Combo gel de limpieza y crema hidratante </h3>
         <img class="producto__imagen" src="./media/limpiador-e-hidratante.jpg" alt="Combo limpiador e hidratante">
         <p class="producto__precio">$2249</p>
-        <input class="producto__boton transicionBoton" type="submit" value="Comprar"></article>
+        <input class="producto__boton transicionBoton" type="submit" value="Comprar">
         </div>
+      </div>
+      </div>
         <h2>Skincare tips</h2>
-        <section class="contenedor-videos row justify-content-center p-3">
+        <section class="d-flex justify-content-evenly p-2">
           <div class="row">
         <div class="col">
           <iframe src="https://www.youtube.com/embed/_7VOFxqJ_dM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
