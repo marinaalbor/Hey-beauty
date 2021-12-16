@@ -5,19 +5,19 @@
 @import "estructura";
 @import "bem";
 @import "operaciones";
+@import "reseteo";
 
 // VARIABLES
-$rosa:#F2BBE3;
-$verde:#2A5955;
-$amarillo:#F2B33D;
-$beige:#F2E9D8;
+$rosa:#FFBFEB;
+$verde:#2A5F5E;
+$amarillo:#F1B33A;
+$beige:#FAF2DD;
 $gris:#474747;
 
 header {
   width: 100%;
   padding: 1.25rem;
   background-color: $rosa;
-  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,7 +33,7 @@ main {
   min-height: 100vh;
 }
 .navbar {
-  height: 130px;
+  height: 120px;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -43,67 +43,45 @@ main {
 
 .navbar-collapse {
   z-index: 1;
+  background-color: $rosa;
 }
 
 .navbar-nav {
   background-color: $rosa;
-  padding: 30px;
+  padding: 20px;
 }
 
 button.navbar-toggler {
-  color: #474747;
+  color: $gris;
+  background-color: $rosa;
 }
 
 nav ul li:hover ul {
   background-color: $amarillo;
   color: $gris;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: $texto;
   font-weight: normal;
   list-style-type: none;
   display: block;
   position: absolute;
   text-align: left;
-  padding: 20px;
-  width: 220px;
+  padding: 15px;
+  width: auto;
   height: auto;
   z-index: 1;
 }
-
-.navbar-light {
+.nav-item{
   color: $gris;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: $texto;
   font-weight: bold;
   font-size: 20px;
 }
-/* nav {
-  height: 5rem;
-  padding: 1.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  ul {
-    display: flex;
-    flex-direction: row; 
-    ul {
-      display: none;
-    }
-
-    li:hover ul {
-      background-color: $amarillo;
-      color: $gris;
-      font-family: 'Josefin Sans', sans-serif;
-      font-weight: normal;
-      list-style-type: none;
-      display: block;
-      position: absolute;
-      text-align: left;
-      padding: 1.25rem;
-      width: 13.75rem;
-      height: 12.5rem;
-    }
-  }
-}  */
+.navbar-light {
+  color: $gris;
+  font-family: $texto;
+  font-weight: bold;
+  font-size: 20px;
+}
 
 // CAROUSEL
 #carouselExampleCaptions{
@@ -112,7 +90,7 @@ nav ul li:hover ul {
 
 table {
   border: 1px solid;
-  margin: 1.25rem;
+  margin: 10px 30px;
 }
 
 th {
@@ -125,7 +103,7 @@ th {
 tr, td {
   border: 1px solid;
   text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: $texto;
   font-weight: normal;
   padding: 0.625rem;
   font-size: 1rem;
@@ -133,11 +111,11 @@ tr, td {
 
 .form {
   color:$gris;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: $texto;
   font-weight: normal;
   font-size: 1.25rem;
-  margin: 1.25rem;
-  line-height: 1;
+  margin: 10px 30px;
+  line-height: 1.5;
     input,select,textarea{
       margin: 0.2rem;
       border: 1px solid $gris;
@@ -152,64 +130,6 @@ tr, td {
   width: 100%;
   background-position: center center;
 }
-
-/* .menuFlex {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-
-  a {
-    text-decoration: none;
-    margin: 0.625rem;
-    color: $gris;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-    height: 1.875rem;
-    text-align: center;
-    list-style-type: none;
-  }
-
-    li {
-  list-style-type: none;
-} 
-}*/
-/* .gridCuatroCol {
-  display: grid;
-}
-
-.gridDosCol {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-} */
-
-/* .iframeContainer{
-  display: flex;
-} */
-
-/* .iframe {
-  display: flex;
-  flex-direction: column;
-  margin: 1.25rem;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* DEGRADADO */
-.degradadoHeader{
-  background-color: #eec0c6;
-background-image: linear-gradient(to bottom,#F2E9D8, #F2BBE3 95%);
-}
-/* TRANCISIONES */
-/* .transicionBoton {
-  transition: all 2s;
-
-  &:hover {
-    border: $amarillo solid 1px;
-    color: $amarillo;
-    background-color: $gris;
-  }
-} */
-
 
 .notFound {
   background-color: white;
@@ -230,7 +150,7 @@ background-image: linear-gradient(to bottom,#F2E9D8, #F2BBE3 95%);
     padding: 0.3125rem 1.25rem;
     background-color: $amarillo;
     color: $gris;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: $texto;
     font-weight: bold;
     font-size: 2rem;
     border: 2px solid;
@@ -239,4 +159,16 @@ background-image: linear-gradient(to bottom,#F2E9D8, #F2BBE3 95%);
     margin: 0.625rem;
   }
 }
+.mediosDePago{
+    color: $gris;
+    font-family: $texto;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 10px 30px;
+  }
 
+.contenedor-videos{
+  padding: 50px;
+}

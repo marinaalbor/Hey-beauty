@@ -1,0 +1,89 @@
+/******************
+ESTILOS DE TIPOGRAFIAS
+*******************************/
+/*VARIABLES  */
+$rosa:#F2BBE3;
+$verde:#2A5955;
+$amarillo:#F2B33D;
+$beige:#F2E9D8;
+$gris:#474747;
+
+$fuenteGrande: font-size 2rem;
+$fuenteMediana:font-size 1.5rem;
+$fuenteChica: font-size 1rem;
+
+.textoCarousel{
+    color: $beige;
+    font-family: 'Yeseva One', cursive;
+    font-weight: bold;
+    font-size: 6rem;
+    text-align: center;
+}
+
+h1 {
+    color: $gris;
+    font-family: 'Yeseva One', cursive;
+    font-weight: bold;
+    font-size: $fuenteGrande;
+    margin: 1.5rem;
+} 
+
+h2 {
+    color: $gris;
+    font-family: 'Yeseva One', cursive;
+    font-weight: bold;
+    font-size: $fuenteMediana;
+    margin: 1.25rem;
+}
+
+h3 {
+    color: $gris;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size:$fuenteMediana;
+    padding: 0.625rem 1.5rem;
+}
+
+h4 {
+    color: $gris;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+/* h5 {
+    color: $gris;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: regular;
+} */
+
+p {
+    color: $gris;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 0.625rem 1.5rem;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.navbar-light {
+    color: $gris;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+ul{
+    color: $gris;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: regular;
+    font-size: 1.5rem;
+
+    li{
+        margin: 5px;
+        font-size: 1.5rem;
+    }
+}

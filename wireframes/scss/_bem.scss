@@ -1,19 +1,20 @@
+//BLOQUE BEM
 .producto {
     margin: 10px;
     border: 2px solid;
     border-radius: 15px;
     border-color: $gris;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction:column;
+    justify-content: center;
     align-items: center;
 }
 .producto__titulo{
     color: $gris;
-    font-family: $texto;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 1.5rem;
+    padding: 1.5rem;
 }
 .producto__imagen{
     justify-self: center;
@@ -21,20 +22,20 @@
 }
 .producto__precio{
     color: $gris;
-    font-family: $texto;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 1.5rem;
     text-align: justify;
     line-height: 1.5;
-    padding: 10px;
+    padding: 1.5rem;
 }
 .producto__boton{
-    padding: 10px;
-    background-color:$amarillo;
-    color:$gris;
-    font-family: $texto;
+    padding: 5px 20px;
+    background-color: $amarillo;
+    color: $gris;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.5rem;
     border: 1px solid;
     border-color: $gris;
     border-radius: 15px;
@@ -45,25 +46,24 @@
 .footer{
     width: 100%;
     background-color: $verde;
-    padding: 10px;
+    padding: 10px 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    bottom: 0px;
+    bottom: 0rem;
 }
 .footer__texto{
     color: $beige;
-    font-family: $texto;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: normal;
     font-size: 16px;
 }
 .footer__titulo {
     color: $beige;
-    font-family: $texto;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
-    font-size: 20px;
-    margin: 0px;
-    padding: 5px;
+    font-size: 1.5rem;
+    padding: 0px;
 }
 .footer__logo{
     display: flex;
@@ -80,12 +80,14 @@
     padding: 5px;
 }
 .footer__boton{
-    padding: 10px;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: $amarillo;
     color: $gris;
-    font-family: $texto;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
     border-radius: 15px;
     border: 1px solid;
     border-color: $gris;
@@ -93,8 +95,26 @@
 }
 .footer__form{
     color: $beige;
-    font-family: $texto;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1;
 }
+//BLOQUE BEM
+/* .texto{
+    color: $gris;
+}
+.texto__titulo{
+    font-family: 'Yeseva One', cursive;
+    font-weight: bold;
+    font-size: $fuenteGrande;
+    margin: 1.5rem;
+}
+.texto__cuerpo{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal;
+    font-size: $fuenteMediana;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 1.5rem;
+} */

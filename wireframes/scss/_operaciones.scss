@@ -1,6 +1,4 @@
 $ancho:1200px;
-$titulo: "Georgia", serif;
-$texto:  "Helvetica", sans-serif;
 
 /* .container{
 width: $ancho;
@@ -9,23 +7,23 @@ justify-items:flex-start;
 }
  */
 /* .container__producto{
-width: $ancho / 2;
-margin: 1rem;
+//width: $ancho / 2;
+//margin: 1rem;
 padding: 5px;
-border: 2px solid;
-border-radius: 15px;
-border-color: $gris;
-display: flex;
-flex-direction: column;
+//flex-direction: column;
 justify-content: flex-start;
 align-items: center;
+display: grid;
+grid-gap: 1rem;
+grid-template-columns: auto auto;
+grid-template-rows: auto;
 } */
 
 /* EXTEND */
 .boton{
     padding: 5px 1.5rem;
     color: $gris;
-    font-family: $texto;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
     border: 1px solid;
