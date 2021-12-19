@@ -7,12 +7,12 @@ $gris:#474747;
 /******************
 ESTILOS DE TIPOGRAFIAS
 *******************************/
-$titulo: "Georgia", serif;
-$texto:  "Helvetica", sans-serif;
+$titulo: "Yeseva One", "Source Serif Pro", sans-serif;
+$texto:  "Source Sans Pro","Calibri", sans-serif;
 
 .textoCarousel{
     color: white;
-    font-family: $titulo;
+    font-family: "Yeseva One", "Source Serif Pro", serif;
     font-weight: bold;
     font-size: 6rem;
     margin: 20px;
@@ -42,14 +42,20 @@ h3 {
     font-size: 20px;
     padding: 10px 30px;
 }
+h4 {
+    color: $gris;
+    font-family: $titulo;
+    font-weight: bold;
+    font-size: 20px;
+}
 
 p {
     color: $gris;
     font-family: $texto;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: justify;
-    line-height: 1.5;
+    line-height: 2em;
     padding: 10px 30px;
 }
 

@@ -3,7 +3,7 @@ ESTILOS DE TIPOGRAFIAS
 *******************************/
 .textoCarousel {
   color: white;
-  font-family: "Georgia", serif;
+  font-family: "Yeseva One", "Source Serif Pro", serif;
   font-weight: bold;
   font-size: 6rem;
   margin: 20px;
@@ -11,32 +11,38 @@ ESTILOS DE TIPOGRAFIAS
 
 h1 {
   color: #474747;
-  font-family: "Georgia", serif;
+  font-family: "Yeseva One", "Source Serif Pro", sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
   margin: 10px 30px; }
 
 h2 {
   color: #474747;
-  font-family: "Georgia", serif;
+  font-family: "Yeseva One", "Source Serif Pro", sans-serif;
   font-size: 2rem;
   font-weight: bold;
   margin: 10px 30px; }
 
 h3 {
   color: #474747;
-  font-family: "Georgia", serif;
+  font-family: "Yeseva One", "Source Serif Pro", sans-serif;
   font-weight: bold;
   font-size: 20px;
   padding: 10px 30px; }
 
+h4 {
+  color: #474747;
+  font-family: "Yeseva One", "Source Serif Pro", sans-serif;
+  font-weight: bold;
+  font-size: 20px; }
+
 p {
   color: #474747;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: justify;
-  line-height: 1.5;
+  line-height: 2em;
   padding: 10px 30px; }
 
 /* .negrita {
@@ -45,7 +51,7 @@ p {
  */
 .navbar-light {
   color: #474747;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
   font-weight: bold;
   font-size: 20px; }
 
@@ -110,7 +116,7 @@ p {
 
 .producto__titulo {
   color: #474747;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
   font-weight: bold;
   font-size: 20px;
   padding: 10px; }
@@ -121,7 +127,7 @@ p {
 
 .producto__precio {
   color: #474747;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
   font-weight: normal;
   font-size: 20px;
   text-align: justify;
@@ -129,12 +135,12 @@ p {
   padding: 10px; }
 
 .producto__boton {
-  padding: 10px;
+  padding: 5px;
   background-color: #F1B33A;
   color: #474747;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
   border: 1px solid;
   border-color: #474747;
   border-radius: 15px;
@@ -151,13 +157,13 @@ p {
 
 .footer__texto {
   color: #FAF2DD;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
   font-weight: normal;
   font-size: 16px; }
 
 .footer__titulo {
   color: #FAF2DD;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
   font-weight: bold;
   font-size: 20px;
   margin: 0px;
@@ -181,7 +187,7 @@ p {
   padding: 10px;
   background-color: #F1B33A;
   color: #474747;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
   font-weight: bold;
   font-size: 16px;
   border-radius: 15px;
@@ -191,7 +197,7 @@ p {
 
 .footer__form {
   color: #FAF2DD;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
   font-weight: normal;
   font-size: 1rem;
   line-height: 1; }
@@ -218,9 +224,9 @@ align-items: center;
 .boton, .botonEnviar, .botonLimpiar {
   padding: 5px 1.5rem;
   color: #474747;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   border: 1px solid;
   border-color: #474747;
   border-radius: 15px;
@@ -242,7 +248,7 @@ align-items: center;
 
 header {
   width: 100%;
-  padding: 1.25rem;
+  padding: 1.5rem;
   background-color: #FFBFEB;
   display: flex;
   align-items: center;
@@ -279,28 +285,28 @@ button.navbar-toggler {
 nav ul li:hover ul {
   background-color: #F1B33A;
   color: #474747;
-  font-family: "Helvetica", sans-serif;
-  font-weight: normal;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
   list-style-type: none;
   display: block;
   position: absolute;
   text-align: left;
-  padding: 15px;
+  padding: 10px;
   width: auto;
   height: auto;
   z-index: 1; }
 
 .nav-item {
   color: #474747;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
   font-weight: bold;
-  font-size: 20px; }
+  font-size: 1.5rem;
+  padding: 10px; }
 
 .navbar-light {
   color: #474747;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
   font-weight: bold;
-  font-size: 20px; }
+  font-size: 1.25rem; }
 
 #carouselExampleCaptions {
   z-index: 0; }
@@ -311,6 +317,7 @@ table {
 
 th {
   background-color: #FFBFEB;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
   border: 1px solid;
   padding: 0.625rem;
   font-size: 1.25rem; }
@@ -318,23 +325,22 @@ th {
 tr, td {
   border: 1px solid;
   text-align: center;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
   font-weight: normal;
   padding: 0.625rem;
-  font-size: 1rem; }
+  font-size: 1,25rem; }
 
-.form {
+#contact-form {
   color: #474747;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
   font-weight: normal;
   font-size: 1.25rem;
   margin: 10px 30px;
   line-height: 1.5; }
-  .form input, .form select, .form textarea {
-    margin: 0.2rem;
+  #contact-form input, #contact-form select, #contact-form textarea {
     border: 1px solid #474747;
     border-radius: 0.3125rem; }
-  .form label {
+  #contact-form label {
     margin: 0.2rem; }
 
 .fotoGrande {
@@ -355,7 +361,7 @@ tr, td {
     padding: 0.3125rem 1.25rem;
     background-color: #F1B33A;
     color: #474747;
-    font-family: "Helvetica", sans-serif;
+    font-family: "Source Sans Pro", "Calibri", sans-serif;
     font-weight: bold;
     font-size: 2rem;
     border: 2px solid;
@@ -365,12 +371,13 @@ tr, td {
 
 .mediosDePago {
   color: #474747;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: justify;
-  line-height: 1.5;
+  line-height: 2em;
   margin: 10px 30px; }
 
-.contenedor-videos {
-  padding: 50px; }
+/* .contenedor-videos{
+  padding: 50px;
+} */

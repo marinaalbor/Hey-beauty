@@ -1,3 +1,6 @@
+$titulo: "Yeseva One", "Source Serif Pro", sans-serif;
+$texto:  "Source Sans Pro","Calibri", sans-serif;
+
 .producto {
     margin: 10px;
     border: 2px solid;
@@ -29,12 +32,12 @@
     padding: 10px;
 }
 .producto__boton{
-    padding: 10px;
+    padding: 5px;
     background-color:$amarillo;
     color:$gris;
     font-family: $texto;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
     border: 1px solid;
     border-color: $gris;
     border-radius: 15px;

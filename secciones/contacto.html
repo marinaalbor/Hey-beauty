@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <img src="../media/logo/logo.png" alt="Hey beauty" href="../index.html">
+          <a href="../index.html"><img src="../media/logo/logo.png" alt="Hey beauty"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -54,33 +54,89 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart mx-2" viewBox="0 0 16 16">
                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person mx-2" viewBox="0 0 16 16">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person mx-2" viewBox="0 0 16 16" data-bs-toggle="modal" data-bs-target="#modalForm">
                 <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
               </svg>
             </div>
           </nav>
     </header>
     <main>
+              <!-- Modal -->
+<div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title">Ingresar</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="mb-2">
+                      <input type="text" class="form-control" id="username" name="username" placeholder="Correo electrónico" />
+                  </div>
+                  <div class="mb-2">
+                      <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" />
+                  </div>
+                  <div class="justify-content-center">
+                      <button type="submit" class="botonEnviar">Ingresar</button>
+                    </div>
+                      <div class="modal-footer d-block p-2">
+                      <p class="p float-start"><a href="#">Crear cuenta</a></p>
+                      <p class="p float-start"><a href="#">Olvidé la contraseña</a></p>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+            </div>
+          </nav>
+    </header>
+    <main>
         <h1>Contacto</h1>
-            <form class="form" action="" >
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre"><br>
-            <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido"><br>
-            <label for="email">Correo electrónico:</label>
-            <input type="email" name="correo electrónico"><br>
-            <label for="consulta">Consulta:</label>
-            <select name="consulta">
-            <option value="Asesoramiento">Necesito asesoramiento con mi rutina</option>
-            <option value="Consulta">Consulta sobre mi pedido</option>
-            <option value="Otro">Otro</option>
-            </select><br>
-            <label for="comentario">Comentario:</label><br>
-            <textarea name="comentario" id="" cols="100" rows="10"></textarea><br>
-            <input class="botonEnviar transicionBoton" type="submit" value="Enviar">
-            <input class="botonLimpiar transicionBoton" type="reset" value="Limpiar"><br>
-            <div>Quiero recibir novedades y promociones
-            <input type="checkbox" name="acepta" value="1" /></div>
+        <form id="contact-form" role="form">
+          <div class="controls">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group"> <label for="form_name">Nombre</label> <input id="form_name" type="text" name="name" class="form-control" required="required" data-error="Firstname is required."> </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group"> <label for="form_lastname">Apellido</label> <input id="form_lastname" type="text" name="surname" class="form-control" required="required" data-error="Lastname is required."> </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group"> <label for="form_email">Email</label> <input id="form_email" type="email" name="email" class="form-control" required="required" data-error="Valid email is required."> </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group"> <label for="form_need">Consulta</label> <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                              <option value="" selected disabled>--Selecciona--</option>
+                              <option>Necesito asesoramiento con mi rutina</option>
+                              <option>Consulta sobre mi pedido</option>
+                              <option>Otros</option>
+                          </select> </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                  <div class="form-group"> <label for="form_message">Mensaje</label> <textarea id="form_message" name="message" class="form-control" rows="5" required="required" data-error="Please, leave us a message."></textarea> </div>
+                  </div>
+                  </div>
+                  <div class="row">
+                      <div class="col d-flex justify-content-center my-3">
+                      <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" checked/>
+                      <label class="form-check-label" for=""> Quiero recibir novedades y promociones </label>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="row">
+                  <div class="col d-flex justify-content-center">
+                  <div class="col-md-2"> <input type="submit" class="botonEnviar" value="Enviar"> </div>
+                  <div class="col-md-2"> <input type="submit" class="botonLimpiar" value="Limpiar"> </div>
+                  </div>
+                  </div>
+                  </div>
             </form>
     </main>
     <footer class="footer">
