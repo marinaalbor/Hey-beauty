@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/destino.css">
 </head>
 <body>
+  <header>
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
     <a href="index.html"><img src="./media/logo/logo.png" alt="Hey beauty"></a>
@@ -25,7 +26,7 @@
       <div class="collapse navbar-collapse fondoRosa" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href=".index.html">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./secciones/nosotros.html">Nosotros</a>
@@ -78,12 +79,12 @@
                   <div class="mb-2">
                       <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" />
                   </div>
-                  <div class="justify-content-center">
+                  <div class="d-flex justify-content-center">
                       <button type="submit" class="botonEnviar">Ingresar</button>
                     </div>
-                      <div class="modal-footer d-block p-2">
-                      <p class="p float-start"><a href="#">Crear cuenta</a></p>
-                      <p class="p float-start"><a href="#">Olvidé la contraseña</a></p>
+                      <div class="modal-footer d-block justify-content-center p-2">
+                      <p class="p float-start"><a href="#" class="text-decoration-none">Crear cuenta</a></p>
+                      <p class="p float-start"><a href="#" class="text-decoration-none">Olvidé la contraseña</a></p>
                   </div>
               </form>
           </div>
@@ -191,9 +192,6 @@
         <div class="col-12 col-md-4 p-2">
         <iframe src="https://www.youtube.com/embed/zgTc72BOMyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-      <!--   <div class="col-12 col-md-4 p-2">
-        <iframe src="https://www.youtube.com/embed/JFhirl4m1W4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div> -->
       </div>
     </main>
     <footer class="footer">
@@ -203,7 +201,7 @@
         <form class="footer__form" action="">
     <label for="email"  class="footer__texto">Correo electrónico:</label>
     <input type="email" placeholder="Tu correo electrónico">
-    <input class="footer__boton transicionBoton" type="submit" value="Suscrbirme">
+    <input class="footer__boton" type="submit" value="Suscrbirme">
     </form>
 </article>
 <article class="footer__iconos"> <img class="footer__icono" src="./media/icons/facebook.png" alt="Icono Facebook">

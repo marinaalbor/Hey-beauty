@@ -1,0 +1,31 @@
+/* //TABLA */
+table {
+    border: 1px solid;
+    margin: 10px 30px;
+  }
+
+th {
+    background-color: $rosa;
+    font-family: $texto;
+    border: 1px solid;
+    padding: 0.625rem;
+    font-size: 1.25rem;
+}
+
+tr, td {
+    border: 1px solid;
+    text-align: center;
+    font-family: $texto;
+    font-weight: normal;
+    padding: 0.625rem;
+    font-size: 1,25rem;
+}
+.mediosDePago{
+    color: $gris;
+    font-family: $texto;
+    font-weight: normal;
+    font-size: 1.25rem;
+    text-align: justify;
+    line-height: 2em;
+    margin: 10px 30px;
+  }

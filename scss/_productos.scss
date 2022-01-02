@@ -1,0 +1,58 @@
+.card{
+    margin: 1rem;
+    border: 2px solid;
+    border-radius: 15px;
+    border-color: $gris;
+}
+  .card-text, .card-title {
+    padding: 0.5rem 1.5rem;
+    margin: 0rem;
+}
+
+.producto {
+    margin: 1rem;
+    border: 2px solid;
+    border-radius: 15px;
+    border-color: $gris;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+}
+.producto__titulo{
+    color: $gris;
+    font-family: $texto;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+.producto__imagen{
+    justify-self: center;
+    border-radius: 15px;
+}
+.producto__precio{
+    color: $gris;
+    font-family: $texto;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 10px;
+}
+.producto__boton{
+    padding: 5px 10px;
+    background-color:$amarillo;
+    color:$gris;
+    font-family: $texto;
+    font-weight: bold;
+    font-size: 1.25rem;
+    border: 1px solid;
+    border-color: $gris;
+    border-radius: 15px;
+    margin: 10px;
+        &:hover{
+        background-color: $gris;
+        color: $amarillo;
+    }
+}

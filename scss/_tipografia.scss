@@ -1,23 +1,4 @@
-$rosa:#FFBFEB;
-$verde:#2A5F5E;
-$amarillo:#F1B33A;
-$beige:#FAF2DD;
-$gris:#474747;
-
-/******************
-ESTILOS DE TIPOGRAFIAS
-*******************************/
-$titulo: "Yeseva One", "Source Serif Pro", sans-serif;
-$texto:  "Source Sans Pro","Calibri", sans-serif;
-
-.textoCarousel{
-    color: white;
-    font-family: "Yeseva One", "Source Serif Pro", serif;
-    font-weight: bold;
-    font-size: 6rem;
-    margin: 20px;
-    text-align: center;
-}
+@import "variables";
 
 h1 {
     color: $gris;
@@ -48,7 +29,6 @@ h4 {
     font-weight: bold;
     font-size: 20px;
 }
-
 p {
     color: $gris;
     font-family: $texto;
@@ -58,9 +38,3 @@ p {
     padding: 1rem 2rem;
 }
 
-.navbar-light {
-    color: $gris;
-    font-family: $texto;
-    font-weight: bold;
-    font-size: 20px;
-}

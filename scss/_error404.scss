@@ -1,0 +1,28 @@
+.notFound {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+    flex-direction: row;
+    }
+
+    h1 {
+    font-size: 3rem;
+    }
+
+    input {
+    padding: 0.3125rem 1.25rem;
+    background-color: $amarillo;
+    color: $gris;
+    font-family: $texto;
+    font-weight: bold;
+    font-size: 2rem;
+    border: 2px solid;
+    border-color: $gris;
+    border-radius: 0.9375rem;
+    margin: 0.625rem;
+    }
+}

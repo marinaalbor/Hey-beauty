@@ -1,55 +1,89 @@
-$titulo: "Yeseva One", "Source Serif Pro", sans-serif;
-$texto:  "Source Sans Pro","Calibri", sans-serif;
-
-.producto {
-    margin: 1rem;
-    border: 2px solid;
-    border-radius: 15px;
-    border-color: $gris;
+* { Margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* HEADER */
+header {
+    width: 100%;
+    background-color: $rosa;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    padding: 1rem;
 }
-.producto__titulo{
+.navbar {
+    height: 120px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $rosa;
+}
+.navbar-collapse {
+    z-index: 1;
+    background-color: $rosa;
+}
+.navbar-nav {
+    background-color: $rosa;
+    padding: 20px;
+}
+button.navbar-toggler {
+    color: $gris;
+    background-color: $rosa;
+}
+nav ul li:hover ul {
+    background-color: $amarillo;
+    color: $gris;
+    font-family: $texto;
+    list-style-type: none;
+    display: block;
+    position: absolute;
+    text-align: left;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    z-index: 1;
+}
+.nav-item{
     color: $gris;
     font-family: $texto;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.5rem;
     padding: 10px;
 }
-.producto__imagen{
-    justify-self: center;
-    border-radius: 15px;
-}
-.producto__precio{
+.navbar-light {
     color: $gris;
-    font-family: $texto;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: justify;
-    line-height: 1.5;
-    padding: 10px;
-}
-.producto__boton{
-    padding: 5px 10px;
-    background-color:$amarillo;
-    color:$gris;
     font-family: $texto;
     font-weight: bold;
     font-size: 1.25rem;
-    border: 1px solid;
-    border-color: $gris;
-    border-radius: 15px;
-    margin: 10px;
-        &:hover{
-        background-color: $gris;
-        color: $amarillo;
+}
+/* MODAL */
+.modal-body {
+    background-color: $beige;
+}
+.modal-header{
+    background-color: $rosa;
+}
+.text-decoration-none{
+    color:$gris;
+    font-family: $texto;
+    font-weight:bold;
+    font-size: 1.25rem;
+    &:hover{
+        color: black;
     }
 }
 
-//BLOQUE BEM
+/* BODY */
+body {
+    background-color: $beige;
+    width: 100%;
+}
+/* MAIN */
+main {
+    width: 100%;
+    min-height: 100vh;
+}
+/* FOOTER */
 .footer{
     width: 100%;
     background-color: $verde;

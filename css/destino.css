@@ -1,117 +1,20 @@
-/******************
-ESTILOS DE TIPOGRAFIAS
-*******************************/
-.textoCarousel {
-  color: white;
-  font-family: "Yeseva One", "Source Serif Pro", serif;
-  font-weight: bold;
-  font-size: 6rem;
-  margin: 20px;
-  text-align: center; }
-
-h1 {
-  color: #474747;
-  font-family: "Yeseva One", "Source Serif Pro", sans-serif;
-  font-weight: bold;
-  font-size: 2.5rem;
-  margin: 1rem 2rem; }
-
-h2 {
-  color: #474747;
-  font-family: "Yeseva One", "Source Serif Pro", sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 1rem 2rem; }
-
-h3 {
-  color: #474747;
-  font-family: "Yeseva One", "Source Serif Pro", sans-serif;
-  font-weight: bold;
-  font-size: 1.5rem;
-  padding: 1rem 2rem; }
-
-h4 {
-  color: #474747;
-  font-family: "Yeseva One", "Source Serif Pro", sans-serif;
-  font-weight: bold;
-  font-size: 20px; }
-
-p {
+/* FORMULARIO DE CONTACTO */
+#contact-form {
   color: #474747;
   font-family: "Source Sans Pro", "Calibri", sans-serif;
   font-weight: normal;
   font-size: 1.25rem;
-  line-height: 2em;
-  padding: 1rem 2rem; }
+  margin: 10px 30px;
+  line-height: 1.5; }
+  #contact-form input, #contact-form select, #contact-form textarea {
+    border: 1px solid #474747;
+    border-radius: 0.3125rem; }
+  #contact-form label {
+    margin: 0.2rem; }
 
-.navbar-light {
-  color: #474747;
-  font-family: "Source Sans Pro", "Calibri", sans-serif;
-  font-weight: bold;
-  font-size: 20px; }
-
-/* RESPONSIVE */
-/* MEDIA QUERIES */
-/* Smartphone */
-@media (max-width: 599px) {
-  header {
-    display: flex;
-    flex-direction: column; }
-  footer {
-    display: flex;
-    flex-direction: column; } }
-
-/* Tablet */
-@media (min-width: 600px) and (max-width: 1023px) {
-  header {
-    display: flex;
-    flex-direction: column; }
-  footer {
-    display: flex;
-    flex-direction: column; } }
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    flex-direction: row; }
-  footer {
-    display: flex;
-    flex-direction: row; } }
-
-.producto {
-  margin: 1rem;
-  border: 2px solid;
-  border-radius: 15px;
-  border-color: #474747;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 1rem; }
-
-.producto__titulo {
-  color: #474747;
-  font-family: "Source Sans Pro", "Calibri", sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  padding: 10px; }
-
-.producto__imagen {
-  justify-self: center;
-  border-radius: 15px; }
-
-.producto__precio {
-  color: #474747;
-  font-family: "Source Sans Pro", "Calibri", sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: justify;
-  line-height: 1.5;
-  padding: 10px; }
-
-.producto__boton {
-  padding: 5px 10px;
-  background-color: #F1B33A;
+/* BOTONES */
+.boton, .botonEnviar, .botonLimpiar {
+  padding: 5px 1.5rem;
   color: #474747;
   font-family: "Source Sans Pro", "Calibri", sans-serif;
   font-weight: bold;
@@ -120,10 +23,129 @@ p {
   border-color: #474747;
   border-radius: 15px;
   margin: 10px; }
-  .producto__boton:hover {
+  .boton:hover, .botonEnviar:hover, .botonLimpiar:hover {
     background-color: #474747;
     color: #F1B33A; }
 
+.botonEnviar {
+  background-color: #F1B33A; }
+  .botonEnviar:hover {
+    background-color: #474747;
+    color: #F1B33A; }
+
+.botonLimpiar {
+  background-color: #FFBFEB; }
+  .botonLimpiar:hover {
+    background-color: #474747;
+    color: #FFBFEB; }
+
+.notFound {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+  .notFound img {
+    flex-direction: row; }
+  .notFound h1 {
+    font-size: 3rem; }
+  .notFound input {
+    padding: 0.3125rem 1.25rem;
+    background-color: #F1B33A;
+    color: #474747;
+    font-family: "Source Sans Pro", "Calibri", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    border: 2px solid;
+    border-color: #474747;
+    border-radius: 0.9375rem;
+    margin: 0.625rem; }
+
+* {
+  Margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* HEADER */
+header {
+  width: 100%;
+  background-color: #FFBFEB;
+  display: flex;
+  align-items: center; }
+
+.navbar {
+  height: 120px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFBFEB; }
+
+.navbar-collapse {
+  z-index: 1;
+  background-color: #FFBFEB; }
+
+.navbar-nav {
+  background-color: #FFBFEB;
+  padding: 20px; }
+
+button.navbar-toggler {
+  color: #474747;
+  background-color: #FFBFEB; }
+
+nav ul li:hover ul {
+  background-color: #F1B33A;
+  color: #474747;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
+  list-style-type: none;
+  display: block;
+  position: absolute;
+  text-align: left;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  z-index: 1; }
+
+.nav-item {
+  color: #474747;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 10px; }
+
+.navbar-light {
+  color: #474747;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem; }
+
+/* MODAL */
+.modal-body {
+  background-color: #FAF2DD; }
+
+.modal-header {
+  background-color: #FFBFEB; }
+
+.text-decoration-none {
+  color: #474747;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem; }
+  .text-decoration-none:hover {
+    color: black; }
+
+/* BODY */
+body {
+  background-color: #FAF2DD;
+  width: 100%; }
+
+/* MAIN */
+main {
+  width: 100%;
+  min-height: 100vh; }
+
+/* FOOTER */
 .footer {
   width: 100%;
   background-color: #2A5F5E;
@@ -183,118 +205,26 @@ p {
   font-size: 1rem;
   line-height: 1; }
 
-/* .container{
-width: $ancho;
-margin: 1.5rem;
-justify-items:flex-start;
-}
- */
-/* .container__producto{
-width: $ancho / 2;
-margin: 1rem;
-padding: 5px;
-border: 2px solid;
-border-radius: 15px;
-border-color: $gris;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;
-} */
-/* EXTEND */
-.boton, .botonEnviar, .botonLimpiar {
-  padding: 5px 1.5rem;
-  color: #474747;
-  font-family: "Source Sans Pro", "Calibri", sans-serif;
-  font-weight: bold;
-  font-size: 1.25rem;
-  border: 1px solid;
-  border-color: #474747;
-  border-radius: 15px;
-  margin: 10px; }
-
-.botonEnviar {
-  background-color: #F1B33A; }
-  .botonEnviar:hover {
-    background-color: #474747;
-    color: #F1B33A; }
-
-.botonLimpiar {
-  background-color: #FFBFEB; }
-  .botonLimpiar:hover {
-    background-color: #474747;
-    color: #FFBFEB; }
-
-* {
-  Margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-header {
-  width: 100%;
-  padding: 1.5rem;
-  background-color: #FFBFEB;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-
-body {
-  background-color: #FAF2DD;
-  width: 100%; }
-
-main {
-  width: 100%;
-  min-height: 100vh; }
-
-.navbar {
-  height: 120px;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #FFBFEB; }
-
-.navbar-collapse {
-  z-index: 1;
-  background-color: #FFBFEB; }
-
-.navbar-nav {
-  background-color: #FFBFEB;
-  padding: 20px; }
-
-button.navbar-toggler {
-  color: #474747;
-  background-color: #FFBFEB; }
-
-nav ul li:hover ul {
-  background-color: #F1B33A;
-  color: #474747;
-  font-family: "Source Sans Pro", "Calibri", sans-serif;
-  list-style-type: none;
-  display: block;
-  position: absolute;
-  text-align: left;
-  padding: 10px;
-  width: auto;
-  height: auto;
-  z-index: 1; }
-
-.nav-item {
-  color: #474747;
-  font-family: "Source Sans Pro", "Calibri", sans-serif;
-  font-weight: bold;
-  font-size: 1.5rem;
-  padding: 10px; }
-
-.navbar-light {
-  color: #474747;
-  font-family: "Source Sans Pro", "Calibri", sans-serif;
-  font-weight: bold;
-  font-size: 1.25rem; }
-
 #carouselExampleCaptions {
   z-index: 0; }
 
+.textoCarousel {
+  color: white;
+  font-family: "Yeseva One", "Source Serif Pro", sans-serif;
+  font-weight: bold;
+  font-size: 6rem;
+  margin: 20px;
+  text-align: center; }
+
+.fotoGrande {
+  width: 100%;
+  background-position: center center; }
+
+.contenedor-videos iframe {
+  width: 100%;
+  height: 300px; }
+
+/* //TABLA */
 table {
   border: 1px solid;
   margin: 10px 30px; }
@@ -314,45 +244,6 @@ tr, td {
   padding: 0.625rem;
   font-size: 1,25rem; }
 
-#contact-form {
-  color: #474747;
-  font-family: "Source Sans Pro", "Calibri", sans-serif;
-  font-weight: normal;
-  font-size: 1.25rem;
-  margin: 10px 30px;
-  line-height: 1.5; }
-  #contact-form input, #contact-form select, #contact-form textarea {
-    border: 1px solid #474747;
-    border-radius: 0.3125rem; }
-  #contact-form label {
-    margin: 0.2rem; }
-
-.fotoGrande {
-  width: 100%;
-  background-position: center center; }
-
-.notFound {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center; }
-  .notFound img {
-    flex-direction: row; }
-  .notFound h1 {
-    font-size: 3rem; }
-  .notFound input {
-    padding: 0.3125rem 1.25rem;
-    background-color: #F1B33A;
-    color: #474747;
-    font-family: "Source Sans Pro", "Calibri", sans-serif;
-    font-weight: bold;
-    font-size: 2rem;
-    border: 2px solid;
-    border-color: #474747;
-    border-radius: 0.9375rem;
-    margin: 0.625rem; }
-
 .mediosDePago {
   color: #474747;
   font-family: "Source Sans Pro", "Calibri", sans-serif;
@@ -361,10 +252,6 @@ tr, td {
   text-align: justify;
   line-height: 2em;
   margin: 10px 30px; }
-
-.contenedor-videos iframe {
-  width: 100%;
-  height: 300px; }
 
 .card {
   margin: 1rem;
@@ -375,3 +262,112 @@ tr, td {
 .card-text, .card-title {
   padding: 0.5rem 1.5rem;
   margin: 0rem; }
+
+.producto {
+  margin: 1rem;
+  border: 2px solid;
+  border-radius: 15px;
+  border-color: #474747;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem; }
+
+.producto__titulo {
+  color: #474747;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px; }
+
+.producto__imagen {
+  justify-self: center;
+  border-radius: 15px; }
+
+.producto__precio {
+  color: #474747;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 1.5;
+  padding: 10px; }
+
+.producto__boton {
+  padding: 5px 10px;
+  background-color: #F1B33A;
+  color: #474747;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  border: 1px solid;
+  border-color: #474747;
+  border-radius: 15px;
+  margin: 10px; }
+  .producto__boton:hover {
+    background-color: #474747;
+    color: #F1B33A; }
+
+/* RESPONSIVE */
+/* MEDIA QUERIES */
+/* Smartphone */
+@media (max-width: 599px) {
+  header {
+    display: flex;
+    flex-direction: column; }
+  footer {
+    display: flex;
+    flex-direction: column; } }
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+  header {
+    display: flex;
+    flex-direction: column; }
+  footer {
+    display: flex;
+    flex-direction: column; } }
+
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: row; }
+  footer {
+    display: flex;
+    flex-direction: row; } }
+
+h1 {
+  color: #474747;
+  font-family: "Yeseva One", "Source Serif Pro", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin: 1rem 2rem; }
+
+h2 {
+  color: #474747;
+  font-family: "Yeseva One", "Source Serif Pro", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 2rem; }
+
+h3 {
+  color: #474747;
+  font-family: "Yeseva One", "Source Serif Pro", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 1rem 2rem; }
+
+h4 {
+  color: #474747;
+  font-family: "Yeseva One", "Source Serif Pro", sans-serif;
+  font-weight: bold;
+  font-size: 20px; }
+
+p {
+  color: #474747;
+  font-family: "Source Sans Pro", "Calibri", sans-serif;
+  font-weight: normal;
+  font-size: 1.25rem;
+  line-height: 2em;
+  padding: 1rem 2rem; }

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../css/destino.css">
 </head>
 <body>
+  <header>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a href="../index.html"><img src="../media/logo/logo.png" alt="Hey beauty"></a>
@@ -62,35 +63,35 @@
           </nav>
     </header>
     <main>
- <!-- Modal -->
+      <!-- Modal -->
 <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h4 class="modal-title">Ingresar</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <form>
-                  <div class="mb-2">
-                      <input type="text" class="form-control" id="username" name="username" placeholder="Correo electrónico" />
-                  </div>
-                  <div class="mb-2">
-                      <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" />
-                  </div>
-                  <div class="justify-content-center">
-                      <button type="submit" class="botonEnviar">Ingresar</button>
-                    </div>
-                      <div class="modal-footer d-block p-2">
-                      <p class="p float-start"><a href="#">Crear cuenta</a></p>
-                      <p class="p float-start"><a href="#">Olvidé la contraseña</a></p>
-                  </div>
-              </form>
-          </div>
+<div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+          <h4 class="modal-title">Ingresar</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form>
+              <div class="mb-2">
+                  <input type="text" class="form-control" id="username" name="username" placeholder="Correo electrónico" />
+              </div>
+              <div class="mb-2">
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" />
+              </div>
+              <div class="d-flex justify-content-center">
+                  <button type="submit" class="botonEnviar">Ingresar</button>
+                </div>
+                  <div class="modal-footer d-block justify-content-center p-2">
+                  <p class="p float-start"><a href="#" class="text-decoration-none">Crear cuenta</a></p>
+                  <p class="p float-start"><a href="#" class="text-decoration-none">Olvidé la contraseña</a></p>
+              </div>
+          </form>
       </div>
   </div>
 </div>
-    <h1>Productos</h1>
+</div>    
+<h1>Productos</h1>
     <div class="card m-3 p-4">
       <div class="row">
           <h2 class="col-12 card-title">Gel de limpieza facial</h2>    
@@ -173,7 +174,7 @@
         <form class="footer__form" action="">
     <label for="email"  class="footer__texto">Correo electrónico:</label>
     <input type="email" placeholder="Tu correo electrónico">
-    <input class="footer__boton transicionBoton" type="submit" value="Suscrbirme">
+    <input class="footer__boton" type="submit" value="Suscrbirme">
     </form>
 </article>
 <article class="footer__iconos"> <img class="footer__icono" src="../media/icons/facebook.png" alt="Icono Facebook">
