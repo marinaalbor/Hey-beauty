@@ -2,10 +2,13 @@
 @import "tipografia";
 @import "responsive";
 @import "paleta";
-@import "estructura";
 @import "bem";
 @import "operaciones";
-@import "reseteo";
+
+* { Margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
 
 // VARIABLES
 $rosa:#FFBFEB;
@@ -13,7 +16,6 @@ $verde:#2A5F5E;
 $amarillo:#F1B33A;
 $beige:#FAF2DD;
 $gris:#474747;
-
 $titulo: "Yeseva One", "Source Serif Pro", sans-serif;
 $texto:  "Source Sans Pro","Calibri", sans-serif;
 
@@ -174,6 +176,17 @@ tr, td {
     margin: 10px 30px;
   }
 
-/* .contenedor-videos{
-  padding: 50px;
-} */
+.contenedor-videos iframe{
+    width: 100%;
+    height: 300px;
+}
+.card{
+  margin: 1rem;
+  border: 2px solid;
+  border-radius: 15px;
+  border-color: $gris;
+}
+.card-text, .card-title {
+  padding: 0.5rem 1.5rem;
+  margin: 0rem;
+}

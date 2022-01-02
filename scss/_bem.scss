@@ -2,7 +2,7 @@ $titulo: "Yeseva One", "Source Serif Pro", sans-serif;
 $texto:  "Source Sans Pro","Calibri", sans-serif;
 
 .producto {
-    margin: 10px;
+    margin: 1rem;
     border: 2px solid;
     border-radius: 15px;
     border-color: $gris;
@@ -10,6 +10,7 @@ $texto:  "Source Sans Pro","Calibri", sans-serif;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding: 1rem;
 }
 .producto__titulo{
     color: $gris;
@@ -25,14 +26,14 @@ $texto:  "Source Sans Pro","Calibri", sans-serif;
 .producto__precio{
     color: $gris;
     font-family: $texto;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 20px;
     text-align: justify;
     line-height: 1.5;
     padding: 10px;
 }
 .producto__boton{
-    padding: 5px;
+    padding: 5px 10px;
     background-color:$amarillo;
     color:$gris;
     font-family: $texto;
@@ -42,6 +43,10 @@ $texto:  "Source Sans Pro","Calibri", sans-serif;
     border-color: $gris;
     border-radius: 15px;
     margin: 10px;
+        &:hover{
+        background-color: $gris;
+        color: $amarillo;
+    }
 }
 
 //BLOQUE BEM
@@ -93,6 +98,10 @@ $texto:  "Source Sans Pro","Calibri", sans-serif;
     border: 1px solid;
     border-color: $gris;
     margin: 10px 0px;
+        &:hover{
+        background-color: $gris;
+        color: $amarillo;
+    }
 }
 .footer__form{
     color: $beige;

@@ -14,21 +14,21 @@ h1 {
   font-family: "Yeseva One", "Source Serif Pro", sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
-  margin: 10px 30px; }
+  margin: 1rem 2rem; }
 
 h2 {
   color: #474747;
   font-family: "Yeseva One", "Source Serif Pro", sans-serif;
   font-size: 2rem;
   font-weight: bold;
-  margin: 10px 30px; }
+  margin: 1rem 2rem; }
 
 h3 {
   color: #474747;
   font-family: "Yeseva One", "Source Serif Pro", sans-serif;
   font-weight: bold;
-  font-size: 20px;
-  padding: 10px 30px; }
+  font-size: 1.5rem;
+  padding: 1rem 2rem; }
 
 h4 {
   color: #474747;
@@ -41,14 +41,9 @@ p {
   font-family: "Source Sans Pro", "Calibri", sans-serif;
   font-weight: normal;
   font-size: 1.25rem;
-  text-align: justify;
   line-height: 2em;
-  padding: 10px 30px; }
+  padding: 1rem 2rem; }
 
-/* .negrita {
-    font-weight: bold;
-}
- */
 .navbar-light {
   color: #474747;
   font-family: "Source Sans Pro", "Calibri", sans-serif;
@@ -62,15 +57,6 @@ p {
   header {
     display: flex;
     flex-direction: column; }
-  .gridCuatroCol {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); }
-  .gridDosCol {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); }
-  .iframeContainer {
-    display: flex;
-    flex-direction: column; }
   footer {
     display: flex;
     flex-direction: column; } }
@@ -80,12 +66,6 @@ p {
   header {
     display: flex;
     flex-direction: column; }
-  .gridCuatroCol {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); }
-  .gridDosCol {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); }
   footer {
     display: flex;
     flex-direction: column; } }
@@ -94,25 +74,20 @@ p {
   header {
     display: flex;
     flex-direction: row; }
-  .gridCuatroCol {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); }
-  .gridDosCol {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); }
   footer {
     display: flex;
     flex-direction: row; } }
 
 .producto {
-  margin: 10px;
+  margin: 1rem;
   border: 2px solid;
   border-radius: 15px;
   border-color: #474747;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center; }
+  align-items: center;
+  padding: 1rem; }
 
 .producto__titulo {
   color: #474747;
@@ -128,14 +103,14 @@ p {
 .producto__precio {
   color: #474747;
   font-family: "Source Sans Pro", "Calibri", sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 20px;
   text-align: justify;
   line-height: 1.5;
   padding: 10px; }
 
 .producto__boton {
-  padding: 5px;
+  padding: 5px 10px;
   background-color: #F1B33A;
   color: #474747;
   font-family: "Source Sans Pro", "Calibri", sans-serif;
@@ -145,6 +120,9 @@ p {
   border-color: #474747;
   border-radius: 15px;
   margin: 10px; }
+  .producto__boton:hover {
+    background-color: #474747;
+    color: #F1B33A; }
 
 .footer {
   width: 100%;
@@ -194,6 +172,9 @@ p {
   border: 1px solid;
   border-color: #474747;
   margin: 10px 0px; }
+  .footer__boton:hover {
+    background-color: #474747;
+    color: #F1B33A; }
 
 .footer__form {
   color: #FAF2DD;
@@ -234,13 +215,16 @@ align-items: center;
 
 .botonEnviar {
   background-color: #F1B33A; }
+  .botonEnviar:hover {
+    background-color: #474747;
+    color: #F1B33A; }
 
 .botonLimpiar {
   background-color: #FFBFEB; }
+  .botonLimpiar:hover {
+    background-color: #474747;
+    color: #FFBFEB; }
 
-/*
-*  html5resetcss
-*/
 * {
   Margin: 0;
   padding: 0;
@@ -378,6 +362,16 @@ tr, td {
   line-height: 2em;
   margin: 10px 30px; }
 
-/* .contenedor-videos{
-  padding: 50px;
-} */
+.contenedor-videos iframe {
+  width: 100%;
+  height: 300px; }
+
+.card {
+  margin: 1rem;
+  border: 2px solid;
+  border-radius: 15px;
+  border-color: #474747; }
+
+.card-text, .card-title {
+  padding: 0.5rem 1.5rem;
+  margin: 0rem; }

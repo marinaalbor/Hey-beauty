@@ -29,13 +29,22 @@ align-items: center;
     border: 1px solid;
     border-color: $gris;
     border-radius: 15px;
-    margin: 10px;}
+    margin: 10px;
+}
 
 .botonEnviar{
     @extend .boton;
     background-color: $amarillo;
+    &:hover{
+        background-color: $gris;
+        color: $amarillo;
+    }
 }
 .botonLimpiar{
     @extend .boton;
     background-color: $rosa;
+        &:hover{
+        background-color: $gris;
+        color: $rosa;
+    }
 }
